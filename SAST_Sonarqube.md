@@ -5,11 +5,10 @@
 2. [What is Static Code Analysis](#what-is-static-code-analysis)
 3. [Why Use Static Code Analysis in CI](#why-use-static-code-analysis-in-ci)
 4. [Workflow Diagram](#workflow-diagram)
-5. [Java CI Checks](#java-ci-checks)
 6. [Tools for Java Static Code Analysis](#tools-for-java-static-code-analysis)
 7. [Tool Comparison Table](#tool-comparison-table)
 8. [Proof of Concept (POC)](#proof-of-concept-poc)
-9. [Best Practices](#best-practices)
+9. [Advantages of Static Code Analysis](#Advantages-of-Static-Code-Analysis)
 10. [Recommendations / Conclusion](#recommendations--conclusion)
 11. [Contact Information](#contact-information)
 12. [References](#references)
@@ -41,19 +40,8 @@ Static Code Analysis is the process of examining source code **without executing
 
 ---
 
-## 🔁 Workflow Diagram
 
-```mermaid
-graph LR
-A[Developer Pushes Code] --> B[CI Pipeline Triggered]
-B --> C[Compile & Build]
-C --> D[Run Unit Tests]
-D --> E[Static Code Analysis]
-E --> F[Code Quality Report]
-F --> G[Gate Based on Thresholds]
-G --> H[Deploy/Reject Build]
-
-## 🛠 Tools for Static Code Analysis
+## 🛠 Tools for Java Static Code Analysis
 
 | Tool         | Description                               | Language Support | Integration Methods       | License        |
 |--------------|-------------------------------------------|------------------|----------------------------|----------------|

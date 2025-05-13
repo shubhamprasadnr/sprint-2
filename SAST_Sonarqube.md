@@ -1,6 +1,13 @@
-# 📘 Application CI Design | Java CI Checks | Static Code Analysis
+# Java CI Checks | Static Code Analysis
 
-## 📑 Table of Contents
+| Author  | Created on | Version   | Last Edited On | Comment  | Reviewer |
+|---------|------------|-----------|----------------|-------------------|---------------|
+| Shubham | 12-04-25   |  version1| 12-04-25        | Internal Review    | Siddharth Pawar|
+| Shubham | -   |  version1| -       | Internal Review    | Gaurav Singla |
+| Shubham | -   |  version1| -      | Internal Review    | Rahul Gupta |
+| Shubham | -   |  version1| -      | Internal Review    | Mahesh Kumar|
+
+## Table of Contents
 1. [Introduction](#introduction)
 2. [What is Static Code Analysis](#what-is-static-code-analysis)
 3. [Why Use Static Code Analysis in CI](#why-use-static-code-analysis-in-ci)
@@ -10,38 +17,38 @@
 8. [Proof of Concept (POC)](#proof-of-concept-poc)
 9. [Advantages of Static Code Analysis](#Advantages-of-Static-Code-Analysis)
 10. [Recommendations / Conclusion](#recommendations--conclusion)
-11. [Contact Information](#contact-information)
+11. [Contacts](#contacts)
 12. [References](#references)
 
 ---
 
-## 📌 Introduction
+## Introduction
 
 In modern software development, Continuous Integration (CI) plays a crucial role in delivering high-quality applications faster and more reliably. Within CI pipelines, **Java-specific checks** and **static code analysis** ensure code quality, security, and maintainability before deployment.
 
 ---
 
-## ❓ What is Static Code Analysis
+##  What is Static Code Analysis
 
 Static Code Analysis is the process of examining source code **without executing it**, to detect potential issues such as bugs, security vulnerabilities, code smells, or style violations.
 
 ---
 
-## 🎯 Why Use Static Code Analysis in CI
+##  Why Use Static Code Analysis in CI
 
 | Benefit                          | Description                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------|
-| ✅ Bug Detection Early           | Identifies issues before runtime or production                             |
-| 🔐 Security Improvement          | Catches vulnerabilities (e.g., injections, hardcoded secrets)              |
-| 🧹 Enforces Coding Standards     | Automates code style checks and formatting                                 |
-| 🛠 Automates Feedback            | Helps reduce manual code review effort                                     |
-| 📉 Reduces Cost of Fixes        | Fixing early-stage issues is cheaper than production bugs                  |
-| ⏱ Saves Time in Long Term       | Consistency and automation improves team productivity                      |
+|  Bug Detection Early           | Identifies issues before runtime or production                             |
+|  Security Improvement          | Catches vulnerabilities (e.g., injections, hardcoded secrets)              |
+|  Enforces Coding Standards     | Automates code style checks and formatting                                 |
+|  Automates Feedback            | Helps reduce manual code review effort                                     |
+|  Reduces Cost of Fixes        | Fixing early-stage issues is cheaper than production bugs                  |
+|  Saves Time in Long Term       | Consistency and automation improves team productivity                      |
 
 ---
 
 
-## 🛠 Tools for Java Static Code Analysis
+##  Tools for Java Static Code Analysis
 
 | Tool         | Description                               | Language Support | Integration Methods       | License        |
 |--------------|-------------------------------------------|------------------|----------------------------|----------------|
@@ -61,7 +68,7 @@ Static Code Analysis is the process of examining source code **without executing
 | Dashboard Support     | ❌     | ❌        | ❌          | ✅✅✅      |
 | IDE Integration       | ✅     | ✅        | ✅          | ✅         |
 
-## 🧠 Best Practices
+##  Best Practices
 
 | Best Practice                      | Description                                                  |
 |-----------------------------------|--------------------------------------------------------------|
@@ -72,7 +79,7 @@ Static Code Analysis is the process of examining source code **without executing
 | Version Control Rulesets          | Keep PMD/Checkstyle rules in Git                             |
 | Educate Developers                | Train to fix issues early via local linting & feedback       |
 
-## ✅ Advantages of Static Code Analysis
+##  Advantages of Static Code Analysis
 
 | Advantage                        | Description                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------|
@@ -87,7 +94,7 @@ Static Code Analysis is the process of examining source code **without executing
 
 
 
-## ✅ Recommendations
+##  Recommendations
 
 | Recommendation                               | Reason                                                               |
 |----------------------------------------------|----------------------------------------------------------------------|
@@ -97,8 +104,13 @@ Static Code Analysis is the process of examining source code **without executing
 | Educate developers on static analysis tools   | Builds awareness and reduces pushback                               |
 | Use pre-commit hooks                          | Ensures code is clean before reaching the repo                      |
 
+##  Contacts
+| Name | Email Address |
+|------|---------------|
+| Shubham Prasad | [shubham.prasad.snaatak@mygurukulam.co](mailto:shubham.prasad.snaatak@mygurukulam.co) |
 
-## 📚 References
+
+##  References
 
 | Resource                      | Link                                              |
 |-------------------------------|---------------------------------------------------|

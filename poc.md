@@ -21,14 +21,7 @@ Before installing SonarQube, ensure the following:
 ---
 
 ## Install SonarQube on Ubuntu
-#### Create SonarQube system user
-````bash
-sudo adduser --system --no-create-home --group --disabled-login sonarqube
-````
-### Move to project directory
-```bash
-cd <project>
-```
+
 
 ### Update system packages
 ```bash
@@ -44,7 +37,10 @@ sudo apt install openjdk-17-jdk -y
 ```bash
 sudo apt install unzip -y
 ```
-
+#### Create SonarQube system user
+````bash
+sudo adduser --system --no-create-home --group --disabled-login sonarqube
+````
 ### Navigate to /opt directory
 ```bash
 cd /opt
@@ -141,3 +137,29 @@ sudo systemctl enable sonarqube
 ```bash
 sudo systemctl status sonarqube
 ```
+
+#### Open sonarqube 
+````bash
+http://51.20.119.116:9000/
+````
+## Setup Project on Sonarqube 
+#### Create a Project 
+#### Ctreate token 
+#### copy the Maven code 
+
+#### Clone Your Project 
+Cloning salary api :refer this document to Up and Run your Salary-api : 
+````bash
+git clone <your_project>
+````
+
+#### Move to Project Directory
+````bash
+cd <your_project
+````
+#### Paste the code here
+````bash
+````
+#### Check Report On Sonarqube 
+
+

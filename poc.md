@@ -18,11 +18,13 @@ Before installing SonarQube, ensure the following:
 - `unzip` is installed.
 - A dedicated Linux user named `sonarqube` is created.
 
-```bash
-sudo adduser --system --no-create-home --group sonarqube
+
 
 
 ## **Install Sonarqube on Ubuntu**
+
+
+
 
 # Move to project directory
 cd project
@@ -86,7 +88,7 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
-## **Start and verify Sonarqube**
+## start and verify Sonarqube
 #### Reload the systemd daemon
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload

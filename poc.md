@@ -21,44 +21,44 @@ Before installing SonarQube, ensure the following:
 
 
 
-## **Install Sonarqube on Ubuntu**
+### **Install Sonarqube on Ubuntu**
 
 
 
 
-# Move to project directory
+#### Move to project directory
 cd project
 
-# Update system packages
+#### Update system packages
 sudo apt update
 
-# Install Java 17
+#### Install Java 17
 sudo apt install openjdk-17-jdk -y
 
-# Install unzip utility
+#### Install unzip utility
 sudo apt install unzip -y
 
-# Navigate to /opt directory
+#### Navigate to /opt directory
 cd /opt
 sudo mkdir sonarqube
 cd sonarqube
 
-# Download SonarQube 7.5
+#### Download SonarQube 7.5
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.5.zip
 
-# Unzip the archive
+#### Unzip the archive
 sudo unzip sonarqube-7.5.zip
 
-# Remove the zip file
+#### Remove the zip file
 sudo rm sonarqube-7.5.zip
 
-# Change ownership to sonarqube user
+#### Change ownership to sonarqube user
 sudo chown -R sonarqube:sonarqube /opt/sonarqube
 
 
-##** Configure Sonarqube**
+## Configure Sonarqube
 
-# Open sonar.properties file
+#### Open sonar.properties file
 sudo nano /opt/sonarqube/sonarqube-7.5/conf/sonar.properties
 
 ## **Update following Properties**

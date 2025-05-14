@@ -18,59 +18,87 @@ Before installing SonarQube, ensure the following:
 - `unzip` is installed.
 - A dedicated Linux user named `sonarqube` is created.
 
+---
 
+## Install SonarQube on Ubuntu
+#### Create SonarQube system user
+````bash
+sudo adduser --system --no-create-home --group --disabled-login sonarqube
+````
+### Move to project directory
+```bash
+cd <project>
+```
 
-
-### **Install Sonarqube on Ubuntu**
-
-
-
-
-#### Move to project directory
-cd project
-
-#### Update system packages
+### Update system packages
+```bash
 sudo apt update
+```
 
-#### Install Java 17
+### Install Java 17
+```bash
 sudo apt install openjdk-17-jdk -y
+```
 
-#### Install unzip utility
+### Install unzip utility
+```bash
 sudo apt install unzip -y
+```
 
-#### Navigate to /opt directory
+### Navigate to /opt directory
+```bash
 cd /opt
 sudo mkdir sonarqube
 cd sonarqube
+```
 
-#### Download SonarQube 7.5
+### Download SonarQube 7.5
+```bash
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-7.5.zip
+```
 
-#### Unzip the archive
+### Unzip the archive
+```bash
 sudo unzip sonarqube-7.5.zip
+```
 
-#### Remove the zip file
+### Remove the zip file
+```bash
 sudo rm sonarqube-7.5.zip
+```
 
-#### Change ownership to sonarqube user
+### Change ownership to sonarqube user
+```bash
 sudo chown -R sonarqube:sonarqube /opt/sonarqube
+```
 
+---
 
-## Configure Sonarqube
+## Configure SonarQube
 
-#### Open sonar.properties file
+### Open `sonar.properties` file
+```bash
 sudo nano /opt/sonarqube/sonarqube-7.5/conf/sonar.properties
+```
 
-## **Update following Properties**
+### Update the following properties:
 
+```properties
 sonar.jdbc.username=sonarqube
 sonar.jdbc.password=some_secure_password
 sonar.jdbc.url=jdbc:mysql://localhost:3306/sonarqube?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true&useConfigs=maxPerformance&useSSL=false
 
 sonar.web.javaAdditionalOpts=-server
 sonar.web.host=127.0.0.1
+```
 
-Create systemd service file
+---
+
+## Create systemd Service File
+
+Create a new service file at `/etc/systemd/system/sonarqube.service`:
+
+```ini
 [Unit]
 Description=SonarQube service
 After=syslog.target network.target
@@ -87,19 +115,29 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+```
 
-## start and verify Sonarqube
-#### Reload the systemd daemon
+---
+
+## Start and Verify SonarQube
+
+### Reload the systemd daemon
+```bash
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
+```
 
-#### Start the SonarQube service
+### Start the SonarQube service
+```bash
 sudo systemctl start sonarqube
+```
 
-#### Enable SonarQube to start at boot
+### Enable SonarQube to start at boot
+```bash
 sudo systemctl enable sonarqube
+```
 
-#### Check the service status
+### Check the service status
+```bash
 sudo systemctl status sonarqube
-
-
+```

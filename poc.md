@@ -22,7 +22,7 @@ Before installing SonarQube, ensure the following:
 sudo adduser --system --no-create-home --group sonarqube
 
 
-Install Sonarqube on Ubuntu
+## **Install Sonarqube on Ubuntu**
 
 # Move to project directory
 cd project
@@ -54,12 +54,12 @@ sudo rm sonarqube-7.5.zip
 sudo chown -R sonarqube:sonarqube /opt/sonarqube
 
 
-Configure Sonarqube
+##** Configure Sonarqube**
 
 # Open sonar.properties file
 sudo nano /opt/sonarqube/sonarqube-7.5/conf/sonar.properties
 
-Update following Properties
+## **Update following Properties**
 
 sonar.jdbc.username=sonarqube
 sonar.jdbc.password=some_secure_password
@@ -86,18 +86,18 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 
-Start and verify Sonarqube
-# Reload the systemd daemon
+## **Start and verify Sonarqube**
+#### Reload the systemd daemon
 sudo systemctl daemon-reexec
 sudo systemctl daemon-reload
 
-# Start the SonarQube service
+#### Start the SonarQube service
 sudo systemctl start sonarqube
 
-# Enable SonarQube to start at boot
+#### Enable SonarQube to start at boot
 sudo systemctl enable sonarqube
 
-# Check the service status
+#### Check the service status
 sudo systemctl status sonarqube
 
 

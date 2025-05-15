@@ -21,7 +21,7 @@
 
 ## Full Documentation of SonarQube
 
-[Click here to view the full documentation](https://github.com/Cloud-NInja-snaatak/Documentation/blob/shubham_scrum56/commonstack/sonarqube/Documentation.md)
+[Click here to view the full documentation](https://github.com/Cloud-NInja-snaatak/Documentation/blob/shubham_scrum56/commonstack/sonarqube/Documentation.md#what-is-sonarqube)
 
 
 ## Types Of Logs File 

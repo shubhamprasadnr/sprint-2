@@ -19,7 +19,10 @@
 - [`References `](#References)
 
 
-## Full Documentation Of Sonarqube 
+## Full Documentation of SonarQube
+
+[Click here to view the full documentation](https://github.com/Cloud-NInja-snaatak/Documentation/blob/shubham_scrum56/commonstack/sonarqube/Documentation.md)
+
 
 ## Types Of Logs File 
 ### 1. `sonar.log`

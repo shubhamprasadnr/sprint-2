@@ -8,13 +8,15 @@
 | Shubham | -   |  version1| -      | L2  Review  | Mahesh Kumar|
 
 ##  Table of Contents
-
+-[`Types Of Logs Files`](#Types-Of-Logs-Files)
 - [1. `sonar.log`](#1-sonarlog)
 - [2. `web.log`](#2-weblog)
 - [3. `ce.log` (Compute Engine log)](#3-celog-compute-engine-log)
 - [4. `es.log` (Elasticsearch log)](#4-eslog-elasticsearch-log)
 - [5. `access.log` (Optional)](#5-accesslog-optional-if-access-logging-is-enabled)
 - [6. `es_access.log` (Newer versions)](#6-es_accesslog-since-newer-versions)
+- [`Contacts`](#Contacts)
+- [`References `](#References)
 
 
 ## Full Documentation Of Sonarqube 
@@ -76,3 +78,15 @@
 **Contains:**
 - REST API calls to Elasticsearch  
 - Diagnostic request info  
+
+
+##  Contacts
+| Name | Email Address |
+|------|---------------|
+| Shubham Prasad | [shubham.prasad.snaatak@mygurukulam.co](mailto:shubham.prasad.snaatak@mygurukulam.co) |
+
+##  References
+
+| Reference | Link |
+|-----------|------|
+| Official SonarQube Documentation – Logs | [View](https://docs.sonarsource.com/sonarqube/latest/instance-administration/logs/) |

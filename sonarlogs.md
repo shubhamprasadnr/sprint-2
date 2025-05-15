@@ -8,7 +8,7 @@
 | Shubham | -   |  version1| -      | L2  Review  | Mahesh Kumar|
 
 ##  Table of Contents
--[`Types Of Logs Files`](#Types-Of-Logs-Files)
+- [`Types Of Logs Files`](#Types-Of-Logs-Files)
 - [1. `sonar.log`](#1-sonarlog)
 - [2. `web.log`](#2-weblog)
 - [3. `ce.log` (Compute Engine log)](#3-celog-compute-engine-log)
@@ -21,6 +21,7 @@
 
 ## Full Documentation Of Sonarqube 
 
+## Types Of Logs File 
 ### 1. `sonar.log`
 **Purpose:** Main entry point log; captures messages from SonarQube scripts (like startup and shutdown).
 

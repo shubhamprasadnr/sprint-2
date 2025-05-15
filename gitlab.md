@@ -22,7 +22,6 @@
 ## 2. What is GitLab?
 
 GitLab is a web-based DevOps lifecycle tool that provides a Git repository manager, issue tracking, code review, continuous integration/continuous deployment (CI/CD), and more. It enables teams to collaborate efficiently and automate the entire software development lifecycle (SDLC), from planning to production.
----
 
 ## 3. Why GitLab?
 

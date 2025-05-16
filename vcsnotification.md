@@ -66,7 +66,7 @@ In a Slack channel (e.g., `#sprint0`), type:
 
 ```bash
 /github signin
-
+```
 
 
 
